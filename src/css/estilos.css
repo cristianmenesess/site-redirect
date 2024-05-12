@@ -1,0 +1,207 @@
+body{
+    background-image: url(../imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #f1f1f1;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+
+
+
+.cartao img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cartao h1 {
+	
+    font-family: 'Roboto', sans-serif;
+font-size: 2rem;
+margin: 0;
+color: rgb(0, 0, 0);
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #0b0b0c;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.tagline {
+	font-style: italic;
+}
+
+main {
+	padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	nav ul {
+		flex-direction: row;
+	}
+	nav li {
+		margin: 0 10px;
+	}
+	nav a {
+		flex-direction: row;
+	}
+	nav a span {
+		margin-right: 10px;
+	}
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color: #f7f6f6;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .Localização{
+    background-color: #545454;
+    border-radius: 25px;
+    width: 250px;
+    
+    
+}
+
+.Localização{
+    display: inline-block; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: rgb(240, 239, 239);
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.Localização i {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.redes-sociais .Cursos{
+    background-color: #545454;
+    border-radius: 25px;
+    width: 250px;
+
+}
+
+.Cursos{
+    display: inline-block; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Cursos i{
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+      
+}
+
+.redes-sociais .Agendamento{
+    background-color: #545454;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.Agendamento {
+    display: inline-block; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.Agendamento i{
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+/* Estilos padrão para telas grandes */
+body {
+    font-size: 18px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    .cartao {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .redes-sociais {
+        max-height: none;
+    }
+    .redes-sociais li a {
+        width: 100%;
+    }
+    .Localização,
+    .Cursos,
+    .Agendamento {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 14px;
+    }
+}
